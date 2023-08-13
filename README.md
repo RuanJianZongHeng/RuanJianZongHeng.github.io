@@ -14,3 +14,9 @@ pip install pymdown-extensions
 pip install mkdocs-material
 ```
 
+构建：
+
+```terminal
+mkdocs 
+```
+
