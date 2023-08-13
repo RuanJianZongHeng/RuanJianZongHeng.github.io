@@ -219,13 +219,15 @@ jobs:
         uses: actions/deploy-pages@v1.2.4 # 部署页面
 ```
 
-再与设置中选择使用 GitHub Actions 作为 Pages 的源：
+再于设置中选择使用 GitHub Actions 作为 Pages 的源：
 
 ![image-20230811220436677](index.assets/image-20230811220436677.png)
 
 ### Github 的几种协作方式
 
-首先先来将一个最简单的方式，这种方式常用于一些体量较小的更改
+首先先来讲一个最简单的方式，这种方式常用于一些体量较小的更改
+
+
 
 接下来是一种比较粗暴的方式，就是直接给予其他人权限，直接 push
 
