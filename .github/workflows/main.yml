@@ -23,18 +23,19 @@ jobs:
     steps:
       - name: Setup Python
         uses: actions/setup-python@v4.5.0
-    
-      - run: pip install mkdocs
-      - run: pip install pymdown-extensions
-      - run: pip install mkdocs-material
+        with:
+          python-version: 3.11
+
+      - run: pip install pipenv
       
       - uses: actions/checkout@v3
         with:
-          submodules: true
           fetch-depth: 0
 
+      - run: pipenv install
+      
       - name: 🔨 Build Site
-        run: mkdocs build
+        run: pipenv run mkdocs build
 
       - name: ⏫ Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1.0.7

@@ -2,8 +2,9 @@
 site_name: RJZH-wiki
 
 # Repository
-repo_name: 'AzurIce/RJZH-wiki'
-repo_url: 'https://github.com/AzurIce/RJZH-wiki'
+repo_name: 'RuanJianZongHeng/RuanJianZongHeng.github.io'
+repo_url: 'https://github.com/RuanJianZongHeng/RuanJianZongHeng.github.io'
+edit_uri: edit/master/docs/
 
 # Contents
 nav:
@@ -14,7 +15,13 @@ nav:
   - 基础设施:
     - 简介: '基础设施/index.md'
   - 活动指南:
-    - 简介: '活动指南/index.md'
+    - 概述: '活动指南/index.md'
+    - 一培前推送:
+      - 概述: '活动指南/一培前推送/index.md'
+      - 历届推送: '活动指南/一培前推送/历届推送.md'
+      # - 招新推送: '活动指南/招新推送.md'
+      # - 队员介绍推送: '活动指南/队员介绍推送.md'
+      # - 一培预热推送: '活动指南/队员介绍推送.md'
     - 一培:
       - 概述: '活动指南/一培/index.md'
       - 场地: '活动指南/一培/场地.md'
@@ -30,16 +37,50 @@ nav:
 
 # Theme
 theme: 
+  language: zh
   name: material
+  custom_dir: overrides
   features:
     - navigation.instant
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.path
+    - navigation.sections
     - navigation.tracking
     - navigation.top
+    - search.suggest
+    - search.share
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
     - toc.follow
 markdown_extensions:
-  - nl2br
-  - toc:
-      permalink: 'True'
-      slugify: !!python/name:pymdownx.slugs.uslugify
+  # Images https://squidfunk.github.io/mkdocs-material/reference/images/
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - pymdownx.caret # ^^insert^^ ^superscript^
+  - pymdownx.mark  # ==mark==
+  - pymdownx.tilde # ~~delete~~ ~subscript~
+  - pymdownx.keys  # ++key++
+  - pymdownx.details # collapsible admonition
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed: # === "Tab 1" or ===! "Start Tab"
+      alternate_style: true
+  # Lists
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+  - glightbox # image zoom (mkdocs-glightbox)
+  - git-revision-date-localized: # (mkdocs-git-revision-date-localized-plugin)
+      type: iso_datetime
+      enable_creation_date: true
+      fallback_to_build_date: true
