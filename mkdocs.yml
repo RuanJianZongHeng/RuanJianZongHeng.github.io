@@ -29,6 +29,7 @@ nav:
       - 物资（邀请函、小礼品、展板等）: '活动指南/一培/物资.md'
       - 嘉宾邀请: '活动指南/一培/嘉宾邀请.md'
       - 历届流程: '活动指南/一培/历届流程.md'
+      - 历届嘉宾: '活动指南/一培/历届嘉宾.md'
   - 技术文档: '技术文档/index.md'
   - 场地申请指南: '场地申请指南.md'
   - 备赛:
@@ -68,10 +69,12 @@ markdown_extensions:
   - md_in_html
   - footnotes
   - tables
+  - pymdownx.critic # critic markup
   - pymdownx.caret # ^^insert^^ ^superscript^
   - pymdownx.mark  # ==mark==
   - pymdownx.tilde # ~~delete~~ ~subscript~
   - pymdownx.keys  # ++key++
+  - admonition
   - pymdownx.details # collapsible admonition
   - pymdownx.superfences:
       custom_fences:
