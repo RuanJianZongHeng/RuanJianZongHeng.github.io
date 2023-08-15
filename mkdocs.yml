@@ -35,6 +35,13 @@ nav:
     - 简介: '备赛/index.md'
     - 备赛工作流: '备赛/备赛工作流/index.md'
 
+extra_javascript:
+  - https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js
+  - js/diagram.js
+
+extra_css:
+  - css/diagram.css
+
 # Theme
 theme: 
   language: zh
@@ -54,6 +61,7 @@ theme:
     - content.action.view
     - content.code.copy
     - toc.follow
+
 markdown_extensions:
   # Images https://squidfunk.github.io/mkdocs-material/reference/images/
   - attr_list
@@ -68,9 +76,15 @@ markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
-          class: mermaid
+          class: diagram
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed: # === "Tab 1" or ===! "Start Tab"
+  - pymdownx.highlight:
+      use_pygments: true
+      auto_title: true
+      linenums: true
+      linenums_style: table
+      anchor_linenums: true
+  - pymdownx.blocks.tab:
       alternate_style: true
   # Lists
   - def_list
