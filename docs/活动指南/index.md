@@ -1,7 +1,6 @@
 <font color="red">------ WIP（Working In Progress）------</font>
 
 /// tab | 2021~2022
-<!-- <div style="width:2000px; overflow-x: auto"> -->
 ```mermaid
 gantt
     title 2021~2022 学期活动
@@ -28,14 +27,6 @@ gantt
     交大论坛                                       :2023-04-15, 2023-06-11
     换届面试                                       :2023-06-07, 1d
 ```
-<!-- </div> -->
 ///
-
-
-> ```c
-> int main() {
->     return 0;
-> }
-> ```
 
 TODO：活动介绍及筹办指南
