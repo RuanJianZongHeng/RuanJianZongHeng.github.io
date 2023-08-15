@@ -1,4 +1,7 @@
-<font color="red">------ WIP（Working In Progress）------</font>
+# 备赛工作流
+
+!!! danger "Working In Progress"
+    本页面仍在完善过程中，内容仍不完整
 
 「每一位辩手都有自己的整理构建思路的方式，
 

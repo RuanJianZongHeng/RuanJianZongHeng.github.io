@@ -1,4 +1,7 @@
-<font color="red">------ WIP（Working In Progress）------</font>
+# 基础设施
+
+!!! danger "Working In Progress"
+    本页面仍在完善过程中，内容仍不完整
 
 ## Github Organization
 

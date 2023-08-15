@@ -1,6 +1,7 @@
-# index
+# 技术文档
 
-<font color="red">------ WIP（Working In Progress）------</font>
+!!! danger "Working In Progress"
+    本页面仍在完善过程中，内容仍不完整
 
 在这里会将一些所要用到的技术做一些整理
 
